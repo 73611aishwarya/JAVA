@@ -1,0 +1,17 @@
+package com.demo.service;
+
+import com.demo.dao.CourseDao;
+import com.demo.dao.CourseDaoImpl;
+
+public class CourseServiceImpl implements CourseService {
+	private CourseDao cdao;
+	public CourseServiceImpl()
+	{
+		cdao=new CourseDaoImpl();
+	}
+	@Override
+	public boolean addnewcourse() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+}

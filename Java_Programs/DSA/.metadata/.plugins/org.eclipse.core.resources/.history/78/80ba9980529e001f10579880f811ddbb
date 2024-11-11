@@ -1,0 +1,8 @@
+package com.demo.test;
+
+import com.demo.queue.MyCircularQueueCustomer;
+
+public class TestCustomerCircularQueue {
+	MyCircularQueueCustomer qcustomer=new MyCircularQueueCustomer(5);
+	qcustomer.enqueue(new Customer(1,"Ashu","aaaa"));
+}

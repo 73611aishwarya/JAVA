@@ -1,0 +1,5 @@
+package com.demo.interfaces;
+
+public interface MyInterface1M<T extends A> {
+	 void display(T ob);
+}

@@ -1,0 +1,9 @@
+package com.demo.service;
+
+public interface CourseService {
+
+	boolean addnewcourse();
+
+	boolean deleteByName(String cname);
+
+}

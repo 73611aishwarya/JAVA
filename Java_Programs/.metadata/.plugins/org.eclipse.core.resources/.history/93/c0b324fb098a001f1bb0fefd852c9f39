@@ -1,0 +1,29 @@
+package com.demo.test;
+
+import java.util.List;
+import java.util.Scanner;
+import java.util.Set;
+
+import com.demo.beans.Account;
+import com.demo.service.AccountServiceImpl;
+import com.demo.service.LoginService;
+import com.demo.service.LoginServiceImpl;
+
+public class TestAccount {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		AccountServiceImpl acservice=new AccountServiceImpl();
+		LoginService lservice=new LoginServiceImpl();
+		System.out.println("enter username");
+		String uname=sc.next();
+		System.out.println("enter password");
+		String pass=sc.next();
+		String role=lservice.autheticate(uname,pass);
+		int choice=0;
+		if(role.equals("user")) {
+		}
+	}
+}
+
+

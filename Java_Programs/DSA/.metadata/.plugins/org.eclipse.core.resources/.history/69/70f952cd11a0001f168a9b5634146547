@@ -1,0 +1,34 @@
+package com.demo.test;
+
+import com.demo.trees.BinarySearchTree;
+
+public class TestBinarySearchTree {
+public static void main(String[] args) {
+	BinarySearchTree bt= new BinarySearchTree();
+	bt.insertValue(30);
+	bt.insertValue(56);
+	bt.insertValue(10);
+	bt.insertValue(45);
+	bt.insertValue(9);
+	bt.insertValue(99);
+	bt.insertValue(61);
+	
+	
+	bt.inorder();
+	bt.preorder();
+	bt.postorder();
+	
+	if(bt.binarySearchValue(10)) {
+		System.out.println("Data found");
+	}else {
+		System.out.println("Data not found");
+	}
+	if(bt.binarySearchValue(100)) {
+		System.out.println("Data found");
+	}else {
+		System.out.println("Data not found");
+	}
+	
+	
+}
+}

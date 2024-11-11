@@ -1,0 +1,13 @@
+package com.demo.service;
+
+public class LoginServiceImpl implements LoginService{
+
+	@Override
+	public String autheticate(String uname, String pass) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+
+}

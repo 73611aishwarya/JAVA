@@ -1,0 +1,25 @@
+package com.demo.queue;
+
+import com.demo.beans.Customer;
+
+public class MyCircularQueueCustomer {
+	Customer []arr;
+	int front;
+	int rear;
+	
+	public MyCircularQueueCustomer() {
+		front=-1;
+		rear=-1;
+		arr=new Customer[10];
+	}
+
+	public MyCircularQueueCustomer(int size) {
+		front=-1;
+		rear=-1;
+		arr=new Customer[size];
+		
+	}
+	
+	
+
+}

@@ -1,0 +1,57 @@
+package com.demo.dao;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import com.demo.beans.Course;
+
+public class CourseDaoImpl implements CourseDao {
+	static Map<String,Course>hm;
+	static {
+		hm.new HashMap<>();
+		hm.put("DAC",new Course("DAC",120000.0,200,300));
+	}
+
+	@Override
+	public boolean save(Course c) {
+		
+		return false;
+	}
+
+	@Override
+	public boolean deleteByName(String cname) {
+		
+		return false;
+	}
+
+	@Override
+	public boolean modifyByName(String cname, int capacity, int duration) {
+		
+		return false;
+	}
+
+	@Override
+	public Map<String, Course> getAll() {
+		
+		return null;
+	}
+
+	@Override
+	public boolean displayByName(String cname) {
+		
+		return false;
+	}
+
+	@Override
+	public List<Course> FindByDuration(int duration1) {
+		
+		return null;
+	}
+
+	@Override
+	public List<Course> sortByDuration() {
+		
+		return null;
+	}
+
+}

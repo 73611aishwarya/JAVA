@@ -1,0 +1,52 @@
+package com.demo.dao;
+
+import java.util.List;
+import java.util.Map;
+
+import com.demo.beans.Course;
+
+public class CourseDaoImpl implements CourseDao {
+
+	@Override
+	public boolean save(Course c) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean deleteByName(String cname) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean modifyByName(String cname, int capacity, int duration) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean displayByName(String cname) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public List<Course> FindByDuration(int duration1) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Course> sortByDuration() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Map<String, Course> sortByName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

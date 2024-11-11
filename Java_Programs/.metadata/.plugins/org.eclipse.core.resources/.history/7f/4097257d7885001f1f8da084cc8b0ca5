@@ -1,0 +1,34 @@
+package com.service;
+
+import com.beans.Account;
+
+public class AccountServiceimp1 implements AccountService {
+	static Account[] acarr;
+	static int cnt;
+	static {
+		acarr=new Account[100];
+		acarr[0]=new Account(1,"Rajan",56865,1010);
+		acarr[1]=new Account(2,"Atharva",96688,2222);
+		cnt=2;
+	}
+	public void AddnewAccount() {
+
+
+	}
+	public int deleteById(int accId, int pin) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	public int withdrawAmount(int accId, int pin, double amt) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	public int depositAmount(int accId, int pin, double amt) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	public double FindBalance(int accId, int pin) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}

@@ -1,0 +1,18 @@
+package com.service;
+import com.beans.Account;
+
+
+public class AccountServiceImp implements AccountService {
+		static Account[] accarr;
+		static int cnt;
+		static {
+			accarr=new Account[100];
+			accarr[0]=new Account(1,"Rajan",345675656,1111);
+			accarr[1]=new Account(2,"Rajeshwari",909888454,3434);
+			cnt=2;
+			
+		}
+		
+		
+		
+	}

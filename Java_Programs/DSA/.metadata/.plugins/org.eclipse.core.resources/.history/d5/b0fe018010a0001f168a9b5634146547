@@ -1,0 +1,78 @@
+package com.demo.trees;
+
+public class BinarySearchTree {
+
+	class Node{
+		Node left;
+		int Data;
+		Node right;
+		
+		public Node(int val) {
+			this.left=null;
+			this.right=null;
+			Data=val;
+			
+		}
+		
+		
+	}
+	Node root;
+	public BinarySearchTree(Node root) {
+		super();
+		this.root = root;
+	}
+	
+	public void insertValue(int val) {
+		root=insertData(root,val);
+	}
+	
+	private Node insertData(Node root, int val) {
+		Node newnode=new Node(val);
+		if(root==null) {
+			root=newnode;
+			return root;
+			
+		}
+		if(val<root.Data) {
+			root.left=insertData(root.left,val);
+			
+		}else {
+			root.right=insertData(root.right,val);
+		}
+		return root;
+	}
+	public void inorder() {
+		inorderTraversal(root);
+		System.out.println("----------------------------");
+		
+	}
+
+	private void inorderTraversal(Node root) {
+		if(root!=null) {
+			inorderTraversal(root.left);
+			System.out.println(root.Data);
+			inorderTraversal(root.right);
+		}
+		
+	}
+	
+	public void preorder() {
+		preorderTraversal(root);
+		System.out.println("----------------------------");
+		
+		
+	}
+
+	private void preorderTraversal(Node root) {
+		
+		if(root!=null) {
+			preorderTraversal(root.Data);
+			System.out.println(root.left);
+			preorderTraversal(root.right);
+		}
+		
+	}
+
+	
+	
+}

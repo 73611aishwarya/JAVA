@@ -1,0 +1,52 @@
+package com.demo.service;
+
+import java.util.Map;
+
+import com.demo.beans.Course;
+import com.demo.dao.CourseDao;
+import com.demo.dao.CourseDaoImpl;
+
+public class CourseServiceImpl implements CourseService {
+	private CourseDao cdao;
+	public CourseServiceImpl()
+	{
+		cdao=new CourseDaoImpl();
+	}
+	
+	
+	@Override
+	public boolean addnewcourse() {
+		
+		
+		return false;
+	}
+	
+	
+	@Override
+	public boolean deleteByName(String cname) {
+		
+		
+		
+		return false;
+	}
+
+
+	@Override
+	public boolean modifyByName(String cname, int capacity, int duration) {
+		
+		
+		
+		
+		return false;
+	}
+
+
+	@Override
+	public Map<String, Course> getAll() {
+		
+		
+		
+		
+		return null;
+	}
+}
